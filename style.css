@@ -1,26 +1,221 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: #ffffff;
+.fixedText {
+    position: fixed;
+    top: 580px;
+    left: 20px;
+    background-color: #F7279E;
+
+
 }
 
-nav{
+.fixedText p {
+    color: #fff;
+    padding: 14px 30px;
+    font-weight: bold;
+    font-size: 16px;
+    /* text-align:start; */
+}
+
+body {
+    background-color: #F7F6F4;
+    /* font-family: -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif; */
+    font-family: "SF Pro Display", "SF Pro Text",
+        -apple-system, BlinkMacSystemFont,
+        sans-serif;
+
+
+}
+
+.nav_1 {
     display: flex;
-    height: 50px;
+    height: 70px;
     width: 100%;
-    gap:5em
+    gap: 2em;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 1em 7em 0em 7em;
+    font-size: 13.5px;
+    position: fixed;
+    background-color: #F7F6F4;
 }
 
-nav ul li{
+.nav_1 ul {
+    flex: 1;
+}
+
+.nav_1 ul li {
     display: inline;
 }
 
-nav ul li a{
+.nav_1 ul li a {
+    text-decoration: none;
+    color: #506683;
+    padding: 15px;
+    font-weight: 700;
+
+
+}
+
+.tel {
+    margin-left: 50px;
+    color: #506683;
+}
+
+.tel a {
+    text-decoration: none;
+    color: #1DA1F2;
+}
+
+.btn_1 {
+    background-color: transparent;
+    border: 0.2px solid #807b7b;
+    text-align: center;
+    border-radius: 80px;
+    padding: 10Px 20px;
+    align-self: center;
+    font-size: 12.9px;
+    font-weight: 700;
+    color: #506683;
+    display: flex;
+}
+
+.btn_text {
+    padding-left: 10px;
+}
+
+/* .btn_2 {
+    background-color: transparent;
+     border: 0.2px solid #807b7b;
+    text-align: center;
+    justify-self: center;
+    border-radius: 80px;
+    padding: 10px;
+    align-self: center;
+    font-size: 12.9px;
+    color: #506683;
+    justify-content: space-between;
+} */
+
+.btn_1 img {
+    justify-self: center;
+}
+
+.HeroSection {
+    background-color: #ECE8D9;
+    height: 40em;
+    width: auto;
+    padding: 9.5em 0em 5em 0em
+}
+
+.imgMain {
+    width: 9em;
+}
+
+.nav_2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.2em 7em 5em 7em;
+}
+
+.nav_2 nav {
+    display: flex;
+    align-items: center;
+
+}
+
+.nav_2 ul li {
+    display: inline;
+}
+
+.nav_2 ul li a {
     text-decoration: none;
     color: #000000;
     padding: 15px;
+    font-size: 14.5px;
+    color: #4a5868;
+    font-weight: 700
+}
+
+.heroBody {
+    padding: 0em 0em 0em 7em;
+    position: relative;
+}
+
+.heroImg {
+    width: 27em;
+    justify-self: right;
+    top: 300px;
+    left: 57.5em;
+    position: absolute;
+}
+
+.heroTitle {
+    font-family: 'DM Serif Display', serif;
+    font-size: 4em;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #384A62;
+    font-size: 67.2px;
+}
+
+.heroSubTitle {
+    padding-bottom: 1.8em;
+    font-weight: 550;
+    color: #70839B;
+    font-size: 25px
+}
+
+.heroParam {
+    font-weight: bold;
+    color: #4E5A66;
+    margin-bottom: 15px;
+}
+
+form input {
+    width: 600px;
+    height: 80px;
+    border-color: transparent;
+    font-size: 17px;
+    padding-left: 20px;
+}
+
+form input::placeholder {
+    color: #9e9b9b;
+}
+
+.gridContainer {
+    padding: 4em 7em 0em 7em;
+
+}
+
+.gridText {
+    justify-content: space-between;
+    display: flex;
+}
+
+#gridHeadText_1 {
+    font-family: "DM Serif Display" serif;
+    font-size: 30px;
+    color:
+        #384A62;
+}
+
+#gridHeadText_2 {
+    font-size: 16px;
+    color:
+        #D77F81
+}
+
+.item{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px 200px 200px;
+    gap: 20px;
 }
